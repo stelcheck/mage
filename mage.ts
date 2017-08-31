@@ -2362,13 +2362,6 @@ declare namespace mage {
             description?: string;
 
             /**
-             * Timeout, in milliseconds
-             *
-             * Upon timeout, the state will close automatically.
-             */
-            timeout?: number
-
-            /**
              * Actor lookup cache timeout
              *
              * By default, the lookup cache will be set
