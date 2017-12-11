@@ -178,6 +178,8 @@ function bootstrap(cb) {
 			pretty.h2('Install additional project dependencies');
 
 			args.unshift('install');
+			args.push('--prefix');
+			args.push('.');
 
 			spawn('npm', args, {
 				stdio: ['ignore', process.stdout, process.stderr],
