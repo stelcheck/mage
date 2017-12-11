@@ -177,6 +177,7 @@ function bootstrap(cb) {
 
 			pretty.h2('Install additional project dependencies');
 
+			args.unshift('--save');
 			args.unshift('install');
 
 			spawn('npm', args, {
